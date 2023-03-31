@@ -1,0 +1,74 @@
+TODO 一.spring        SpringMVC mybatis框架的作用
+    TODO 1.spring
+    作用：简化应用开发难度和周期的项目框架       |
+    实现：对象及依赖关系的解耦，通过配置类管理对象之间的关系/支持其他框架
+    原理：ioc动态注入（反射）
+
+    TODO 2.springMVC
+    (MVC分别是：模型model(javabean)、视图view(jsp/img)、控制器Controller(Action/servlet))
+    作用：解决页面代码和后台代码的分离。
+    SpringMVC底层就是Servlet，SpringMVC就是对Servlet进行深层次的封装。
+    需要做的事：配置前端控制器、开发后端控制器、开发视图
+
+    TODO 3.mybatis
+    它支持自定义 SQL、存储过程以及高级映射。MyBatis 免除了几乎所有的 JDBC 代码以及设置参数和获取结果集的工作。
+    MyBatis 可以通过简单的 XML 或注解来配置和映射原始类型、接口和 Java POJO（Plain Old Java Objects，普通老式 Java 对象）为数据库中的记录。
+
+    TODO 4.springboot
+    简化spring应用的创建及部署，集成spring框架支持
+    注解：
+    @RequestMapping 注解提供了 “routing” （路由）信息。 它告诉Spring，任何带有 / 路径的HTTP请求都应该被映射到 home 方法。
+    @RestController 注解告诉Spring将返回的结果字符串直接响应给客户端。
+    @SpringBootApplication 元注解
+
+TODO 二.http： post  get put delete
+
+    HTTP协议组成	        协议内容示例	                                    对应Spring注解
+    path info传参	    /articles/12 (查询id为12的文章，12是参数)	        @PathVariable("id")   @GetMapping("/articles/{id}")
+    URL Query String传参	/articles?id=12                     	        @RequestParam         @GetMapping("/articles")
+    Body 传参	        Content-Type: multipart/form-data	            @RequestParam         @PostMapping("/articles1")
+    Body 传参	        Content-Type: application/json，或其他自定义格式	@RequestBody          @PostMapping("/articles2")
+    Headers 传参		                                                    @RequestHeader
+TODO 三.restful请求？
+
+    rest请求
+    post请求
+    put/delete请求
+    表单提交
+    文件上传
+    流传输/
+
+TODO 四.中间件  *两个应用调用
+
+
+    1.rpc：[dubbo]/JFS/thrift/GRPC 注册中心/网关/DNS/NG
+        dubbo:
+        优势：调用快，处理快
+        要求：服务提供方和服务消费方都必须使用统一的RPC框架
+            跨操作系统在同一编程语言中使用；
+        作用：项目服务化后的管理（服务治理）：模块之间的通信/url管理/模块发现和删除管理
+    2.http:
+        描述：基于TCP的网络传输协议，
+        要求：服务提供方只需要提供restful风格的接口跨系统跨编程语言的远程调用框架
+            优势：通用性强
+        java-web    mysql
+
+
+    3.maven：
+        compiler    clean   package test-compiler
+
+    log4j：
+    zookeeper:
+    --nginx
+    redis/tair  缓存中间件   数据一致性/
+    kafka/rabbitMQ/RocketMQ
+    mysql/  分库分表中间件
+    --容器化Docker/K8S
+    微服务：概念
+    --lowcode/serverless低代码/无服务/少服务/云
+    DDD：了解
+
+
+
+
+

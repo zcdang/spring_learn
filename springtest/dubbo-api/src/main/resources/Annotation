@@ -1,0 +1,22 @@
+
+1.SpringBootApplication
+注解，主方法上添加
+
+2.MapperScan
+    -》mapper扫描器
+
+Spring-web：
+RestController
+RequestMapping：路径映射，请求路径转发
+    1.类上标注：处理请求的前缀
+    2.方法上标注：类的前缀加上方法上的前缀
+
+Spring提供的注解：
+   @Controller
+   @Service
+   @Repository
+   @Component：
+
+两者实现同样的功能：
+    Autowired：按照id装配
+    Resource:按照类型装配
